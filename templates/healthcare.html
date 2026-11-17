@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="links">
+         <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'grocery' %}">Grocery</a>
+        <a href="{% url 'fashion' %}">Fashion</a>
+        <a href="{% url 'electronics' %}">Electronics</a>
+        <a href="{% url 'healthcare' %}">HealthCare</a>
+        </div>
+    </nav>
+    <h1>HealthCare Page</h1>
+  <div class="healthcare-container">
+        <div class="healthcare-item">
+          
+          <img src="{% static 'images/smartwatch.jpeg' %}" alt="smartwatch">
+          <b>smartwatch</b>
+          <p><b>price:</b>2500/-</p>
+        </div>
+         <div class="healthcare-item">
+           <img src="{% static 'images/bp monitor.jpeg' %}" alt="bp monitor">
+           <b>bp monitor</b>
+           <p><b>price:</b>25000/-</p>
+        </div>
+         <div class="electronics-item">
+            <img src="{% static 'images/ecg.jpeg' %}" alt="ecg">
+           <b>ecg</b>
+           <p><b>price:</b>370000/-</p>
+        </div>
+           <div class="healthcare-item">
+                <img src="{% static 'images/stethoscope.jpeg' %}" alt="stethoscope">
+                <b>stethoscope</b>
+                <p><b>price:</b>500000/-</p>
+            </div> 
+                <div class="healthcare-item">   
+                 <img src="{% static 'images/Thermometer.jpeg' %}" alt="Thermometer">
+                 <b>Thermometer</b>
+                 <p><b>price:</b>1459/-</p>
+                </div>
+
+     </div>
+</body>
+</html>

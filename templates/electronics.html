@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="links">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'grocery' %}">Grocery</a>
+        <a href="{% url 'fashion' %}">Fashion</a>
+        <a href="{% url 'electronics' %}">Electronics</a>
+        <a href="{% url 'healthcare' %}">HealthCare</a>
+        </div>
+    </nav>
+    <h1>Electronics Page</h1>
+    <div class="electronics-container">
+        <div class="electronics-item">
+          
+          <img src="{% static 'images/smartwatch.jpeg' %}" alt="smartwatch">
+          <b>smartwatch</b>
+          <p><b>price:</b>2500/-</p>
+        </div>
+         <div class="electronics-item">
+           <img src="{% static 'images/smartphone.jpeg' %}" alt="smartphone">
+           <b>smartphone</b>
+           <p><b>price:</b>25000/-</p>
+        </div>
+         <div class="electronics-item">
+            <img src="{% static 'images/tv.jpeg' %}" alt="tv">
+           <b>TV</b>
+           <p><b>price:</b>37000/-</p>
+        </div>
+           <div class="electronics-item">
+                <img src="{% static 'images/laptop.jpeg' %}" alt="laptop">
+                <b>laptop</b>
+                <p><b>price:</b>50000/-</p>
+            </div> 
+                <div class="electronics-item">   
+                 <img src="{% static 'images/fridge.jpeg' %}" alt="fridge">
+                 <b>fridge</b>
+                 <p><b>price:</b>60000/-</p>
+                </div>
+            <div class="electronics-item">
+            <img src="{% static 'images/washingmachine.jpeg' %}" alt="washingmachine">
+           <b>washing machine</b>
+           <p><b>price:</b>30000/-</p>
+        </div>
+
+     </div>
+    
+</body>
+   
+</body>
+</html>
